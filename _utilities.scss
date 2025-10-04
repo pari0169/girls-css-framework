@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+/* Spacing utilities */
+.u-m-1 { margin: $space-1 !important; }
+.u-m-2 { margin: $space-2 !important; }
+.u-p-1 { padding: $space-1 !important; }
+.u-p-2 { padding: $space-2 !important; }
+
+/* Font weight utilities */
+.u-fw-400 { font-weight: 400 !important; }
+.u-fw-700 { font-weight: 700 !important; }
+
+/* Text colors */
+.u-text-primary { color: $color-primary !important; }
+.u-text-muted   { color: $color-muted !important; }
+
+/* Borders */
+.u-border { border: $border-width solid $color-border !important; }
+.u-rounded { border-radius: $radius-md !important; }
