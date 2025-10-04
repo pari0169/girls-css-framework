@@ -1,0 +1,26 @@
+@use 'variables';
+
+.fs-sm {
+  font-size: variables.$font-size-sm;
+}
+
+.fs-base {
+  font-size: variables.$font-size-base;
+}
+
+.fs-lg {
+  font-size: variables.$font-size-lg;
+}
+
+.fs-xl {
+  font-size: variables.$font-size-xl;
+}
+.fs-xxl {
+  font-size: variables.$font-size-xxl;
+}
+.fs-3xl {
+  font-size: variables.$font-size-3xl;
+}
+.fs-4xl {
+  font-size: variables.$font-size-4xl;
+}
