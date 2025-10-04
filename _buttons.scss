@@ -1,0 +1,7 @@
+@use 'variables';
+button, .btn {   display: inline-block;   
+background-color: variables.$color-primary;  
+color: white; 
+padding: variables.$spacing-base * 0.5 variables.$spacing-base; 
+border: none;
+border-radius: 0.3rem; }
