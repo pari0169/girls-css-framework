@@ -1,3 +1,16 @@
-@use '../variables' as variables;
 
-@use '../typography' as typography;
+@use 'variables';
+
+
+@use 'typography';
+
+
+@use 'headings';
+@use 'lists';
+@use 'buttons';
+@use 'forms';
+@use 'inputs';
+@use 'tables';
+
+
+@use 'utilities';

@@ -1,14 +1,14 @@
 $color-primary: #506fd6; 
 $color-text: #180f50;
 
-$font-family-base: Roboto, Arial, sans-serif; 
-$font-size-base: 16px; 
+$color-success: #4caf50;  
+$color-danger: #f44336;  
+$color-warning: #ffeb3b;
+$color-light: #f8f9fa;  
+$color-dark: #343a40;    
 
-$color-success: #df499b; // ADD THIS (Green)
-$color-danger: #a8332a;  // ADD THIS (Red)
-$color-warning: #ff933b; // ADD THIS (Yellow)
-$color-light: #f8f9fa;   // ADD THIS (Light gray)
-$color-dark: #54595e;    // ADD THIS (Dark gray)
+$font-family-base: Arial, sans-serif; 
+$font-size-base: 16px; 
 
 $font-size-sm: 14px;
 $font-size-lg: 20px;
@@ -17,4 +17,4 @@ $font-size-xxl: 32px;
 $font-size-3xl: 48px;
 $font-size-4xl: 64px;
 
-$spacing-base: 16px; 
+$spacing-base: 16px
