@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: $border-width solid $color-border;
+}
+
+.table th, .table td {
+  padding: $space-2 $space-3;
+  border-top: $border-width solid $color-border;
+  text-align: left;
+}
+
+.table thead th {
+  background: #f9fafb;
+  font-weight: 700;
+}
+
+.table--striped tbody tr:nth-child(odd) {
+  background: #fafafa;
+}
