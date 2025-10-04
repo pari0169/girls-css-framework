@@ -1,19 +1,52 @@
 @use "variables" as *;
 
-/* Spacing utilities */
-.u-m-1 { margin: $space-1 !important; }
-.u-m-2 { margin: $space-2 !important; }
-.u-p-1 { padding: $space-1 !important; }
-.u-p-2 { padding: $space-2 !important; }
+/* Spacing (margin/padding) */
+@function space($n) {
+  @return if($n == 0, 0, if($n == 1, $space-1, if($n == 2, $space-2,
+    if($n == 3, $space-3, if($n == 4, $space-4, if($n == 5, $space-5,
+    if($n == 6, $space-6, if($n == 8, $space-8, if($n == 10, $space-10, $space-12)))))))));
+}
 
-/* Font weight utilities */
+@for $i from 0 through 12 {
+  .u-m-#{$i} { margin: space($i) !important; }
+  .u-mt-#{$i} { margin-top: space($i) !important; }
+  .u-mr-#{$i} { margin-right: space($i) !important; }
+  .u-mb-#{$i} { margin-bottom: space($i) !important; }
+  .u-ml-#{$i} { margin-left: space($i) !important; }
+
+  .u-p-#{$i} { padding: space($i) !important; }
+  .u-pt-#{$i} { padding-top: space($i) !important; }
+  .u-pr-#{$i} { padding-right: space($i) !important; }
+  .u-pb-#{$i} { padding-bottom: space($i) !important; }
+  .u-pl-#{$i} { padding-left: space($i) !important; }
+}
+
+/* Typography utilities */
 .u-fw-400 { font-weight: 400 !important; }
+.u-fw-600 { font-weight: 600 !important; }
 .u-fw-700 { font-weight: 700 !important; }
 
-/* Text colors */
+.u-fs-sm  { font-size: .875rem !important; }
+.u-fs-base{ font-size: 1rem !important; }
+.u-fs-lg  { font-size: 1.125rem !important; }
+.u-fs-xl  { font-size: 1.25rem !important; }
+.u-fs-2xl { font-size: 1.5rem !important; }
+
+/* Colors */
 .u-text-primary { color: $color-primary !important; }
 .u-text-muted   { color: $color-muted !important; }
+.u-bg-primary   { background: $color-primary !important; color: #fff !important; }
+.u-bg-accent    { background: $color-accent !important; color: #fff !important; }
 
 /* Borders */
-.u-border { border: $border-width solid $color-border !important; }
-.u-rounded { border-radius: $radius-md !important; }
+.u-border       { border: $border-width solid $color-border !important; }
+.u-rounded-sm   { border-radius: $radius-sm !important; }
+.u-rounded-md   { border-radius: $radius-md !important; }
+.u-rounded-lg   { border-radius: $radius-lg !important; }
+
+/* Display & alignment */
+.u-flex   { display: flex !important; }
+.u-inline { display: inline-block !important; }
+.u-center { display: grid !important; place-items: center !important; }
+.u-gap-4  { gap: $space-4 !important; }
+.u-justify-between { justify-content: space-between !important; }
