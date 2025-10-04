@@ -1,0 +1,24 @@
+@use 'variables';
+
+body {
+  font-family: variables.$font-family-base;
+  font-size: variables.$font-size-base; 
+  line-height: 1.5;
+  color: variables.$color-text;
+}
+
+p {
+  margin-bottom: variables.$spacing-base; 
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
