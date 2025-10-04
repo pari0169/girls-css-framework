@@ -1,7 +1,16 @@
-@use 'variables';
-button, .btn {   display: inline-block;   
-background-color: variables.$color-primary;  
-color: white; 
-padding: variables.$spacing-base * 0.5 variables.$spacing-base; 
-border: none;
-border-radius: 0.3rem; }
+// _buttons.scss
+.btn {
+    padding: map-get($spacings, sm) map-get($spacings, md);
+    border-radius: 4px;
+    border: none;
+    font-size: map-get($font-sizes, base);
+    cursor: pointer;
+    transition: 0.2s ease;
+  
+    &--primary { background: $primary; color: white; }
+    &--secondary { background: $secondary; color: white; }
+    &--danger { background: $danger; color: white; }
+  
+    &:hover { opacity: 0.85; }
+  }
+  
