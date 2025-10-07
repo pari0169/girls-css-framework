@@ -1,4 +1,4 @@
-@use 'variables'; 
+@use 'variables' as variables; 
 h1, h2, h3 {  
 margin-top: variables.$spacing-base * 2;   margin-bottom: variables.$spacing-base;     color: variables.$color-primary; 
 font-weight: 700; }

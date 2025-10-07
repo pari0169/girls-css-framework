@@ -1,15 +1,15 @@
 
-@use 'variables';
+@use 'variables' as variables;
 
 
-@use 'typography';
+@use 'typography' as typography;
 
 
-@use 'headings';
-@use 'lists';
-@use 'buttons';
-@use 'forms';
-@use 'inputs';
-@use 'tables';
+@use 'headings' as headings;
+@use 'lists' as lists;
+@use 'buttons' as buttons;
+@use 'forms' as forms;
+@use 'inputs' as inputs;
+@use 'tables' as tables;
 
-@use 'utilities';
+@use 'utilities' as utilities;
