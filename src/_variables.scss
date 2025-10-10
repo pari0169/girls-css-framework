@@ -1,5 +1,7 @@
-$color-primary: #506fd6; 
+$color-primary: #506fd6;
+$color-secondary: yellow; 
 $color-text: #180f50;
+$color-border: pink;
 
 $color-success: #4caf50;  
 $color-danger: #f44336;  
@@ -17,4 +19,8 @@ $font-size-xxl: 32px;
 $font-size-3xl: 48px;
 $font-size-4xl: 64px;
 
-$spacing-base: 16px
+$border-width: 1px;
+$space-2: 2px;
+$space-3: 3px;
+
+$spacings: 16px

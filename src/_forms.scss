@@ -1,3 +1,5 @@
+@use './variables' as variables;
+
 input, textarea, select {
     padding: 0.5rem;
     border: 1px solid #ccc;
@@ -5,8 +7,8 @@ input, textarea, select {
     outline: none;
   
     &:focus {
-      border-color: $primary;
-      box-shadow: 0 0 0 2px rgba($primary, 0.2);
+      border-color: variables.$color-primary;
+      box-shadow: 0 0 0 2px rgba(variables.$color-primary, 0.2);
     }
   }
   
