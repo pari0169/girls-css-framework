@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as variables;
 
 .fs-sm {
   font-size: variables.$font-size-sm;

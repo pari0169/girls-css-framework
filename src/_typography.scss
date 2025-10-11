@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as variables;
 
 body {
   font-family: variables.$font-family-base;
@@ -8,7 +8,7 @@ body {
 }
 
 p {
-  margin-bottom: variables.$spacing-base; 
+  margin-bottom: variables.$spacings; 
 }
 
 .text-left {
