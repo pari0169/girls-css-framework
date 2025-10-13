@@ -1,6 +1,5 @@
 # girls-css-framework
 Our team will create a efficient framework for modern website.
-# Girls CSS Framework
 
 A custom CSS framework built by our team for the “Custom CSS Framework” project.  
 This framework is built with **Sass partials** and provides a **consistent custom theme** for standard HTML elements such as headings, lists, buttons, forms, inputs, and tables.  
@@ -8,7 +7,7 @@ It also includes **utility classes** for quick and flexible styling across color
 
 ---
 
-## 🌈 Features
+## Features
 
 - **Built with Sass and Sass partials** for organized, modular code.  
 - **Customizable variables** for easy theme changes (colors, spacing, fonts).  
@@ -27,7 +26,7 @@ It also includes **utility classes** for quick and flexible styling across color
 
 ---
 
-## ⚙️ Installation & Build
+###Installation & Build
 
 ### Requirements
 Make sure you have **Node.js** and **Sass** installed.
@@ -46,3 +45,22 @@ npx sass scss/style.scss dist/style.css --style=expanded
 
 # Or build and watch for changes
 npx sass --watch scss/style.scss dist/style.css --style=expanded
+
+### Usage
+
+To use the framework in your website, link the compiled CSS file inside your HTML:
+
+<link rel="stylesheet" href="dist/style.css">
+
+### Customization
+
+You can change the theme by overriding Sass variables before compiling.
+
+Then import it before the main file:
+
+@use "overrides";
+@use "style";
+
+Rebuild the CSS file to apply your new styles:
+
+npx sass scss/style.scss dist/style.css --style=expanded
