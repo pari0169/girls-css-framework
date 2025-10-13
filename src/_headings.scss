@@ -2,3 +2,14 @@
 h1, h2, h3 {  
 margin-top: variables.$spacings * 2;   margin-bottom: variables.$spacings;     color: variables.$color-primary; 
 font-weight: 700; }
+
+.hero-title {
+  color: variables.$color-hero-title;
+  font-size: variables.$font-size-3xl;
+  margin-top: variables.$spacings; 
+  margin-bottom: variables.$spacings;
+}
+
+.example-heading {
+  color: variables.$color-text;
+}

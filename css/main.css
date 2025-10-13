@@ -1,6 +1,4 @@
 body {
-  margin: 0 auto;
-  padding-top: 16px;
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -30,33 +28,20 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-.hero-title {
-  color: rgb(170, 21, 103);
-  font-size: 48px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-.example-heading {
-  color: #180f50;
-}
-
 .btn {
   padding: 16px;
   border-radius: 4px;
   border: none;
-  font-size: 18px;
+  font-size: Arial, sans-serif;
   cursor: pointer;
   transition: 0.2s ease;
-  font-weight: 700;
-  margin-right: 16px;
 }
 .btn--primary {
   background: #506fd6;
   color: white;
 }
 .btn--secondary {
-  background: #ad4e8e;
+  background: #ff9800;
   color: white;
 }
 .btn--danger {
@@ -78,9 +63,7 @@ input[type=email],
 textarea,
 select {
   display: block;
-  max-width: 400px;
   width: 100%;
-  box-sizing: border-box;
   padding: 0.5rem;
   border: 1px solid rgb(177, 98, 111);
   border-radius: 4px;
@@ -104,25 +87,14 @@ textarea {
 
 .table {
   width: 100%;
-  max-width: 400px;
   border-collapse: collapse;
   border: 1px solid rgb(177, 98, 111);
-  margin-bottom: 32px;
 }
 
 .table th, .table td {
-  padding: 16px;
-  border: 1px solid rgb(177, 98, 111);
+  padding: 2px 3px;
+  border-top: 1px solid rgb(177, 98, 111);
   text-align: left;
-}
-
-.table th {
-  text-align: center;
-  background-color: rgba(255, 200, 221, 0.877);
-}
-
-.table td {
-  text-align: center;
 }
 
 .table thead th {
@@ -134,29 +106,6 @@ textarea {
   background: #fafafa;
 }
 
-/*Layout*/
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-bottom: 64px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
-/*Fonts*/
 .fs-sm {
   font-size: 14px;
 }
@@ -166,7 +115,7 @@ textarea {
 }
 
 .fs-lg {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .fs-xl {
@@ -217,4 +166,4 @@ ol {
   margin-right: 0;
 }
 
-/*# sourceMappingURL=girls-css-framework.css.map */
+/*# sourceMappingURL=main.css.map */

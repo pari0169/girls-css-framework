@@ -1,15 +1,26 @@
-@use "variables" as *;
+@use 'variables' as *;
 
 .table {
   width: 100%;
+  max-width: 400px;
   border-collapse: collapse;
   border: $border-width solid $color-border;
+  margin-bottom: $spacings * 2;
 }
 
 .table th, .table td {
-  padding: $space-2 $space-3;
-  border-top: $border-width solid $color-border;
-  text-align: left;
+  padding: $spacings;
+  border: $border-width solid $color-border;
+  text-align: left; 
+}
+
+.table th {
+  text-align: center;
+  background-color: $color-shade;
+}
+
+.table td {
+  text-align: center;
 }
 
 .table thead th {

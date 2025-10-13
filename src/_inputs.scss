@@ -1,0 +1,35 @@
+
+@use './variables' as variables;
+
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    display: block; 
+    max-width: 400px; 
+    width: 100%;
+    
+    box-sizing: border-box; 
+    padding: 0.5rem; 
+    
+    border: variables.$border-width solid variables.$color-border; 
+    border-radius: 4px;
+    
+    font-family: variables.$font-family-base;
+    font-size: variables.$font-size-base;
+    
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    
+    margin-bottom: variables.$spacings; 
+
+    &:focus {
+        border-color: variables.$color-primary;
+        box-shadow: 0 0 0 2px rgba(variables.$color-primary, 0.2);
+    }
+}
+
+textarea {
+    resize: vertical;
+}

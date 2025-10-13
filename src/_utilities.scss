@@ -1,5 +1,29 @@
 @use 'variables' as variables;
 
+/*Layout*/
+.container {
+  
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: variables.$spacings;
+  padding-right: variables.$spacings;
+  margin-bottom: variables.$spacings * 4; 
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/*Fonts*/
 .fs-sm {
   font-size: variables.$font-size-sm;
 }
